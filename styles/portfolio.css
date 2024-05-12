@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 96px;
+    line-height: 1.5;
 }
 
 h2 {
@@ -45,14 +46,14 @@ p {
     font-size: 36px;
     font-weight: bold;
     margin: 0;
+    color: #272142;
 }
 
 .hero h2 {
     font-family: var(--default-font-family);
     font-weight: normal;
-    line-height: 2;
+    line-height: 1.5;
     font-size: 24px;
-    color: #272142;
 }
 
 .content-container {
@@ -79,9 +80,8 @@ p {
 
 .content h3 {
     font-size: 24px;
-    line-height: 1;
+    line-height: 1.5;
     font-family: var(--default-font-family);
-    margin: 20px 0 0;
 }
 
 .btn-branding {
@@ -93,17 +93,27 @@ p {
     padding: 15px 30px;
 }
 
+.btn-branding:hover {
+    color: #FFFFFF;
+}
+
 .btn-branding-outline {
     color: var(--branding-color);
     border: 1px solid var(--branding-color);
     border-radius: 4px;
     font-size: 18px;
+    text-decoration: none;
     line-height: 27px;
     padding: 15px 30px;
 }
 
+.btn-branding-outline:hover {
+    background: var(--branding-color);
+    color: #FFFFFF;
+}
+
 .project-description {
-    padding: 120px 60px 0;
+    padding: 120px 60px;
 }
 
 .logo {
@@ -155,7 +165,6 @@ footer .email-link {
     text-decoration: none;
     color: black;
     font-size: 24px;
-    text-align: center;
 }
 
 footer .email-link:hover {
